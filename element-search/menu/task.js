@@ -13,11 +13,12 @@ let menuSub = Array.from(showMenuSub);
 for (let index of menu){
 	if (index.querySelector('.menu_sub')){
 	index.querySelector('.menu__link').onclick = function (){
-    for (let item of showMenuSub){
+    for (let item of menuSub){
     	item.className = 'menu menu_sub '
     }
-      if (index.querySelector('.menu_sub').className = 'menu menu_sub menu_active')
-      return false;
+
+index.querySelector('.menu_sub').className = 'menu menu_sub menu_active' 
+ return false;
 	}
 }
 
