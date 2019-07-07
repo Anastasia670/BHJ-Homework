@@ -24,7 +24,29 @@ class Game {
       В случае правильного ввода слова вызываем this.success()
       При неправильном вводе символа - this.fail();
      */
+
+
+     document.addEventListener('keydown', event => {
+
+      let keySymbol = event.key.toLowerCase();
+
+      let targetSymbol = this.currentSymbol.textContent.toLowerCase();
+
+      if (keySymbol === targetSymbol) {
+
+        this.success();
+
+      } else {
+
+        this.fail();
+
+      }
+
+     });
+
   }
+
+   
 
   success() {
     this.currentSymbol.classList.add('symbol_correct');
