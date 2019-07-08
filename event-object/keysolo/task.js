@@ -30,9 +30,9 @@ class Game {
 
       let keySymbol = event.key.toLowerCase();
 
-      let targetSymbol = this.currentSymbol.textContent.toLowerCase();
+      let currentSymbol = this.currentSymbol.textContent.toLowerCase();
 
-      if (keySymbol === targetSymbol) {
+      if (keySymbol === currentSymbol) {
 
         this.success();
 
