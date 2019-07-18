@@ -12,8 +12,7 @@ for(let font of fonts){
 		for (let item of fonts){
 			item.classList.remove('font-size_active')
          book.classList.remove(`book_fs-big`,'book_fs-small') 
-          
-
+         
 		}
 
          font.classList.add('font-size_active')
