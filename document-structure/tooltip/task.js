@@ -1,7 +1,11 @@
 'use strict'
 
+   
+const tooltip = document.createElement('div');
 
-const tooltip = document.querySelector('.tooltip');
+tooltip.setAttribute('class', 'tooltip');
+
+document.body.append(tooltip);
 
 document.body.addEventListener('click', (e) => {
 
