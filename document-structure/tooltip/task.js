@@ -18,7 +18,7 @@ document.body.addEventListener('click', (e) => {
 
 	tooltip.style.left = e.target.getBoundingClientRect().left.toString() + 'px';
 
-	tooltip.classList.add('tooltip_active');
+	tooltip.classList.toggle('tooltip_active');
 	
 
 	e.target.addEventListener('blur', () => {
