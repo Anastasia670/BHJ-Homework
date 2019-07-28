@@ -40,17 +40,23 @@ toAdd.addEventListener('click', e=>{
 
     e.preventDefault();
 
-    const removing = Array.from(document.querySelectorAll('.task__remove'))
-    // удаление задачи
-    removing.forEach(function(item) {
-        item.addEventListener('click', e=>{
+    let removing = document.querySelectorAll('.task__remove')
+    console.log(removing)
+    for(let i of removing){
+        i.onclick = function(e){
        
-            item.closest('div').remove();
+            i.closest('div').remove();
 
             e.preventDefault();
         }
-        )
-    })
+            
+    }
+
+    
+    //удаление задачи
+    // removing.forEach(function(item) {
+
+    // })
 
 }
 )
